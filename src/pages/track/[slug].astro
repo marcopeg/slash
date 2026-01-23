@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.params;
-const tracks = {
+const tracks: Record<string, { title: string; audio: null }> = {
   'blues_100_g': { title: 'Blues in G (100bpm)', audio: null },
   'rock-cool-Am-100-1m': { title: 'Rock Cool in Am (100bpm, 1m)', audio: null },
   'little_wing_68_em': { title: 'Little Wing in Em (68bpm)', audio: null },

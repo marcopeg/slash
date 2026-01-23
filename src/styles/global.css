@@ -1,0 +1,98 @@
+/*
+  Global styles for AI Backing Tracks
+  Vibe: inviting, creative, musician-friendly
+  Accent: Electric Blue (#2979FF)
+  Font: 'Fira Sans', sans-serif (modern, readable, slightly techy but friendly)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
+
+:root {
+  --accent: #2979FF;
+  --bg: #181A20;
+  --bg-alt: #23252c;
+  --text: #f5f6fa;
+  --text-muted: #b0b3c0;
+  --border: #23252c;
+  --radius: 12px;
+  --shadow: 0 2px 16px 0 rgba(41,121,255,0.08);
+}
+
+html, body {
+  font-family: 'Fira Sans', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #fff;
+  background: var(--accent);
+  border-radius: var(--radius);
+  padding: 0.1em 0.4em;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.5em;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.2em;
+  padding: 1.1em 1.5em;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+li a {
+  font-size: 1.1em;
+  letter-spacing: 0.01em;
+}
+
+/* Accent underline for headings */
+h2 {
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+  padding-bottom: 0.2em;
+  margin-bottom: 1.2em;
+}
+
+/* Layout container */
+.layout {
+  max-width: 700px;
+  margin: 3em auto 0 auto;
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5em 2em 2em 2em;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .layout {
+    padding: 1.2em 0.5em;
+  }
+  li {
+    padding: 0.8em 0.7em;
+  }
+}

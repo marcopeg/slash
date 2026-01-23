@@ -1,7 +1,6 @@
-
 ---
 import Layout from '../layouts/Layout.astro';
-
+export const layout = Layout;
 const tracks = [
 	{ slug: 'blues_100_g', title: 'Blues in G (100bpm)' },
 	{ slug: 'rock-cool-Am-100-1m', title: 'Rock Cool in Am (100bpm, 1m)' },
@@ -10,10 +9,11 @@ const tracks = [
 ---
 
 <Layout>
-	<h2>Tracks</h2>
-	<ul style="list-style: none; padding: 0;">
+	<h2>🎵 Find Your Track</h2>
+	<ul>
 		{tracks.map(track => (
-			<li style="margin-bottom: 1rem;">
+			<li>
+				<span style="font-size:1.5em; margin-right:0.5em;">🎶</span>
 				<a href={`/track/${track.slug}`}>{track.title}</a>
 			</li>
 		))}
