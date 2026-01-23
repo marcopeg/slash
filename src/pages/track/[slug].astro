@@ -1,0 +1,36 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  return [
+    { params: { slug: 'blues_100_g' } },
+    { params: { slug: 'rock-cool-Am-100-1m' } },
+    { params: { slug: 'little_wing_68_em' } },
+  ];
+}
+
+const { slug } = Astro.params;
+const tracks = {
+  'blues_100_g': { title: 'Blues in G (100bpm)', audio: null },
+  'rock-cool-Am-100-1m': { title: 'Rock Cool in Am (100bpm, 1m)', audio: null },
+  'little_wing_68_em': { title: 'Little Wing in Em (68bpm)', audio: null },
+};
+const track = tracks[slug];
+---
+
+<Layout>
+  {track && (
+    <div>
+      <h2>{track.title}</h2>
+      <p>Track slug: {slug}</p>
+      <p>[Audio player coming soon]</p>
+      <a href="/">← Back to tracks</a>
+    </div>
+  )}
+  {!track && (
+    <div>
+      <h2>Track not found</h2>
+      <a href="/">← Back to tracks</a>
+    </div>
+  )}
+</Layout>

@@ -1,3 +1,16 @@
+
+# IMPORTANT: At the start of every new chat, you MUST explicitly read the following skill files into the chat context before proceeding with any coding or answering questions:
+
+- `.github/skills/track/SKILL.md` (for all track logic, file structure, and metadata)
+- `.github/skills/astro/SKILL.md` (for all Astro-specific knowledge or tasks)
+
+You must ensure the full contents of these files are loaded into the chat context before you begin any work. Do not rely on references alone. This is required for every new chat session.
+
+
+# Acceptance Criteria for Astro Coding Tasks
+
+Whenever you are given a coding task that involves fixing or changing code for Astro, you MUST run the build process (`npm run build`) and ensure that the project builds successfully before considering the task complete. Only report the task as done if the build passes without errors. This is a required acceptance criteria for all code-level Astro work.
+
 # GitHub Copilot Instructions for AI Backing Tracks Project
 
 Welcome, Copilot! This file provides explicit instructions and context to help you contribute effectively to the AI Backing Tracks project. Please follow these guidelines to ensure your code and suggestions align with the project's goals and structure.
