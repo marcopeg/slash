@@ -1,21 +1,21 @@
 /*
   Global styles for AI Backing Tracks
   Vibe: inviting, creative, musician-friendly
-  Accent: Electric Blue (#2979FF)
+  Accent: Bright Orange (#FF6B35)
   Font: 'Fira Sans', sans-serif (modern, readable, slightly techy but friendly)
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap');
 
 :root {
-  --accent: #2979FF;
+  --accent: #FF6B35;
   --bg: #181A20;
   --bg-alt: #23252c;
   --text: #f5f6fa;
   --text-muted: #b0b3c0;
   --border: #23252c;
   --radius: 12px;
-  --shadow: 0 2px 16px 0 rgba(41,121,255,0.08);
+  --shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
 }
 
 html, body {
