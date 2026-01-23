@@ -10,5 +10,8 @@
   },
   "dependencies": {
     "astro": "^5.16.15"
+  },
+  "engines": {
+    "node": "18.x"
   }
 }
