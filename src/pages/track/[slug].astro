@@ -17,47 +17,52 @@ if (!track) {
 <Layout>
   {track && (
     <div class="track-detail-grid">
-        <div class="track-media">
-          {track.hasVideo ? (
-            <video controls src={track.video} class="track-player">
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            // audio-only (or no video) — show thumbnail and place audio player under it
-            track.thumbnail ? (
-              <div class="thumbnail-audio">
-                <img class="track-player" src={track.thumbnail} alt={`Thumbnail for ${track.title}`} />
-                {track.hasAudio && (
-                  <audio controls src={track.audio} class="track-player audio-player">
-                    Your browser does not support the audio element.
-                  </audio>
-                )}
-              </div>
-            ) : (
-              // no thumbnail but audio available — show audio player alone
-              track.hasAudio ? (
+      <div class="track-media">
+        {track.hasVideo ? (
+          <video controls src={track.video} class="track-player">
+            Your browser does not support the video tag.
+          </video>
+        ) : (
+          // audio-only (or no video) — show thumbnail and place audio player under it
+          track.thumbnail ? (
+            <div class="thumbnail-audio">
+              <img class="track-player" src={track.thumbnail} alt={`Thumbnail for ${track.title}`} />
+              {track.hasAudio && (
                 <audio controls src={track.audio} class="track-player audio-player">
                   Your browser does not support the audio element.
                 </audio>
-              ) : null
-            )
-          )}
-        </div>
-
-      <div class="track-info">
-        <h2>{track.title}</h2>
-        {/* Thumbnail and audio moved to left column when no video; do not duplicate thumbnail when video exists */}
-        <p>{track.description}</p>
-        {track.tags.length > 0 && (
-          <ul class="track-tags">
-            {track.tags.map(tag => (
-              <li class="track-tag">{tag}</li>
-            ))}
-          </ul>
+              )}
+            </div>
+          ) : (
+            // no thumbnail but audio available — show audio player alone
+            track.hasAudio ? (
+              <audio controls src={track.audio} class="track-player audio-player">
+                Your browser does not support the audio element.
+              </audio>
+            ) : null
+          )
         )}
-        <p>Track slug: {slug}</p>
-        <a href="/">← Back to tracks</a>
       </div>
+
+      <details class="track-details" open>
+        <summary>
+          <span>Track details</span>
+        </summary>
+        <div class="track-info">
+          <h2>{track.title}</h2>
+          {/* Thumbnail and audio moved to left column when no video; do not duplicate thumbnail when video exists */}
+          <p>{track.description}</p>
+          {track.tags.length > 0 && (
+            <ul class="track-tags">
+              {track.tags.map(tag => (
+                <li class="track-tag">{tag}</li>
+              ))}
+            </ul>
+          )}
+          <p>Track slug: {slug}</p>
+          <a href="/">← Back to tracks</a>
+        </div>
+      </details>
     </div>
   )}
   {!track && (
@@ -67,3 +72,10 @@ if (!track) {
     </div>
   )}
 </Layout>
+
+<script is:inline>
+  const details = document.querySelector('.track-details');
+  if (details && window.matchMedia('(max-width: 700px)').matches) {
+    details.open = false;
+  }
+</script>
