@@ -1,21 +1,34 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getTrackSummaries } from '../lib/tracks';
+
 export const layout = Layout;
-const tracks = [
-	{ slug: 'blues_100_g', title: 'Blues in G (100bpm)' },
-	{ slug: 'rock-cool-Am-100-1m', title: 'Rock Cool in Am (100bpm, 1m)' },
-	{ slug: 'little_wing_68_em', title: 'Little Wing in Em (68bpm)' },
-];
+const tracks = getTrackSummaries();
 ---
 
 <Layout>
-	<h2>🎵 Find Your Track And Play</h2>
-	<ul>
-		{tracks.map(track => (
-			<li>
-				<span style="font-size:1.5em; margin-right:0.5em;">🎶</span>
-				<a href={`/track/${track.slug}`}>{track.title}</a>
-			</li>
-		))}
-	</ul>
+  <h2>🎵 Find Your Track And Play</h2>
+  <ul class="track-list">
+    {tracks.map(track => (
+      <li class="track-card">
+        {track.thumbnail && (
+          <img
+            class="track-thumbnail"
+            src={track.thumbnail}
+            alt={`Thumbnail for ${track.title}`}
+            loading="lazy"
+          />
+        )}
+        <div class="track-details">
+          <a href={`/track/${track.slug}`}>{track.title}</a>
+          <p class="track-description">{track.description}</p>
+          <ul class="track-tags">
+            {track.tags.map(tag => (
+              <li class="track-tag">{tag}</li>
+            ))}
+          </ul>
+        </div>
+      </li>
+    ))}
+  </ul>
 </Layout>
