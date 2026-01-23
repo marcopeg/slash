@@ -1,0 +1,44 @@
+# Am Rock - 100 BPM - 248 bars (3 phrases)
+# Key: A minor | Style: melodic rock (i-VII-VI-VII)
+# Duration: 9:55
+
+## 8-Bar Phrase
+
+Bar 1-2:    Am    (248 bars)
+Bar 3-4:    G     (248 bars)
+Bar 5-6:    F     (248 bars)
+Bar 7-8:    G     (248 bars)
+
+## Structure
+
+Phrase 1:   Bars 1-8
+Phrase 2:   Bars 9-16
+Phrase 3:   Bars 17-24
+Phrase 4:   Bars 25-32
+Phrase 5:   Bars 33-40
+Phrase 6:   Bars 41-48
+Phrase 7:   Bars 49-56
+Phrase 8:   Bars 57-64
+Phrase 9:   Bars 65-72
+Phrase 10:   Bars 73-80
+Phrase 11:   Bars 81-88
+Phrase 12:   Bars 89-96
+Phrase 13:   Bars 97-104
+Phrase 14:   Bars 105-112
+Phrase 15:   Bars 113-120
+Phrase 16:   Bars 121-128
+Phrase 17:   Bars 129-136
+Phrase 18:   Bars 137-144
+Phrase 19:   Bars 145-152
+Phrase 20:   Bars 153-160
+Phrase 21:   Bars 161-168
+Phrase 22:   Bars 169-176
+Phrase 23:   Bars 177-184
+Phrase 24:   Bars 185-192
+Phrase 25:   Bars 193-200
+Phrase 26:   Bars 201-208
+Phrase 27:   Bars 209-216
+Phrase 28:   Bars 217-224
+Phrase 29:   Bars 225-232
+Phrase 30:   Bars 233-240
+Phrase 31:   Bars 241-248

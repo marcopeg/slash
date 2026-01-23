@@ -1,0 +1,27 @@
+# G Blues (Quick Change) - 100 BPM - 24 bars (2 choruses)
+# Key: G major | Style: 12-bar quick-change blues with rock feel
+# Duration: 0:58
+
+## Quick-Change 12-Bar Form
+
+Bar 1:      G7    (quick change starts)
+Bar 2:      C7    ← IV chord early!
+Bar 3-4:    G7    (2 bars)
+Bar 5-6:    C7    (2 bars)
+Bar 7-8:    G7    (2 bars)
+Bar 9:      D7
+Bar 10:     C7
+Bar 11:     G7
+Bar 12:     D7    (turnaround)
+
+## Structure
+
+Chorus 1:   Bars 1-12
+Chorus 2:   Bars 13-24
+
+## Notes
+
+- Quick-change blues: IV chord appears on bar 2 instead of staying on I
+- Rock feel with straight eighths (no shuffle)
+- Melodic lead line using G blues/major pentatonic
+- Electric piano comping for bluesy texture

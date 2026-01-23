@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "name": "blues_90_a",
+    "tempo_bpm": 90,
+    "time_signature": "4/4",
+    "key": "A",
+    "mode": "major",
+    "total_bars": 12,
+    "total_duration_seconds": 32.0,
+    "style": "12-bar blues",
+    "description": "Classic 12-bar blues in A for practicing blues licks and improvisation",
+    "genre": "blues",
+    "subgenre": "straight blues",
+    "chord_progression": [
+      "A7",
+      "D7",
+      "E7"
+    ],
+    "progression_roman": [
+      "I7",
+      "IV7",
+      "V7"
+    ],
+    "suggested_scales": [
+      "A Blues Scale",
+      "A Mixolydian",
+      "A Major Pentatonic"
+    ],
+    "target_instruments": [
+      "guitar",
+      "bass",
+      "keyboard"
+    ],
+    "difficulty": "beginner",
+    "youtube": {
+      "title_override": null,
+      "description_extra": "Perfect for practicing blues licks and improvisation over classic I-IV-V changes.",
+      "tags_extra": [
+        "jam track",
+        "practice",
+        "improvisation",
+        "12 bar blues"
+      ]
+    },
+    "based_on": "blues_90_g"
+  },
+  "events": [
+    {
+      "chord": "A7",
+      "bar": 1,
+      "beat": 1,
+      "duration_bars": 4,
+      "duration_beats": 16,
+      "start_seconds": 0.0,
+      "duration_seconds": 10.667
+    },
+    {
+      "chord": "D7",
+      "bar": 5,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 10.667,
+      "duration_seconds": 5.333
+    },
+    {
+      "chord": "A7",
+      "bar": 7,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 16.0,
+      "duration_seconds": 5.333
+    },
+    {
+      "chord": "E7",
+      "bar": 9,
+      "beat": 1,
+      "duration_bars": 1,
+      "duration_beats": 4,
+      "start_seconds": 21.333,
+      "duration_seconds": 2.667
+    },
+    {
+      "chord": "D7",
+      "bar": 10,
+      "beat": 1,
+      "duration_bars": 1,
+      "duration_beats": 4,
+      "start_seconds": 24.0,
+      "duration_seconds": 2.667
+    },
+    {
+      "chord": "A7",
+      "bar": 11,
+      "beat": 1,
+      "duration_bars": 1,
+      "duration_beats": 4,
+      "start_seconds": 26.667,
+      "duration_seconds": 2.667
+    },
+    {
+      "chord": "E7",
+      "bar": 12,
+      "beat": 1,
+      "duration_bars": 1,
+      "duration_beats": 4,
+      "start_seconds": 29.333,
+      "duration_seconds": 2.667
+    }
+  ]
+}

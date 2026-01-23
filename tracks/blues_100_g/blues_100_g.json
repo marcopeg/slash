@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "name": "blues_100_g",
+    "tempo_bpm": 100,
+    "time_signature": "4/4",
+    "key": "G",
+    "mode": "major",
+    "total_bars": 24,
+    "total_duration_seconds": 57.6,
+    "style": "12-bar quick-change blues shuffle",
+    "description": "BB King style blues in G with shuffle feel, walking bass, and jazzy 7th voicings",
+
+    "genre": "blues",
+    "subgenre": "classic blues",
+    "chord_progression": ["G7", "C7", "D7"],
+    "progression_roman": ["I7", "IV7", "V7"],
+    "suggested_scales": ["G Blues Scale", "G Major Pentatonic", "G Mixolydian"],
+    "target_instruments": ["guitar", "keyboard", "bass"],
+    "difficulty": "beginner",
+
+    "youtube": {
+      "title_override": null,
+      "description_extra": "Quick-change blues with melodic lead lines - great for practicing blues phrasing over moving changes!",
+      "tags_extra": ["quick change blues", "melodic blues", "rock blues feel"]
+    }
+  },
+  "events": [
+    {"chord": "G7", "bar": 1, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 0.0, "duration_seconds": 2.4},
+    {"chord": "C7", "bar": 2, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 2.4, "duration_seconds": 2.4},
+    {"chord": "G7", "bar": 3, "beat": 1, "duration_bars": 2, "duration_beats": 8, "start_seconds": 4.8, "duration_seconds": 4.8},
+    {"chord": "C7", "bar": 5, "beat": 1, "duration_bars": 2, "duration_beats": 8, "start_seconds": 9.6, "duration_seconds": 4.8},
+    {"chord": "G7", "bar": 7, "beat": 1, "duration_bars": 2, "duration_beats": 8, "start_seconds": 14.4, "duration_seconds": 4.8},
+    {"chord": "D7", "bar": 9, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 19.2, "duration_seconds": 2.4},
+    {"chord": "C7", "bar": 10, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 21.6, "duration_seconds": 2.4},
+    {"chord": "G7", "bar": 11, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 24.0, "duration_seconds": 2.4},
+    {"chord": "D7", "bar": 12, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 26.4, "duration_seconds": 2.4},
+    {"chord": "G7", "bar": 13, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 28.8, "duration_seconds": 2.4},
+    {"chord": "C7", "bar": 14, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 31.2, "duration_seconds": 2.4},
+    {"chord": "G7", "bar": 15, "beat": 1, "duration_bars": 2, "duration_beats": 8, "start_seconds": 33.6, "duration_seconds": 4.8},
+    {"chord": "C7", "bar": 17, "beat": 1, "duration_bars": 2, "duration_beats": 8, "start_seconds": 38.4, "duration_seconds": 4.8},
+    {"chord": "G7", "bar": 19, "beat": 1, "duration_bars": 2, "duration_beats": 8, "start_seconds": 43.2, "duration_seconds": 4.8},
+    {"chord": "D7", "bar": 21, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 48.0, "duration_seconds": 2.4},
+    {"chord": "C7", "bar": 22, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 50.4, "duration_seconds": 2.4},
+    {"chord": "G7", "bar": 23, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 52.8, "duration_seconds": 2.4},
+    {"chord": "D7", "bar": 24, "beat": 1, "duration_bars": 1, "duration_beats": 4, "start_seconds": 55.2, "duration_seconds": 2.4}
+  ]
+}

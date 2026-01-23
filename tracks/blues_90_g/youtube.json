@@ -1,0 +1,52 @@
+{
+  "title": "Blues Backing Track in G | 90 BPM",
+  "description": "\ud83c\udfb8 Blues backing track in G at 90 BPM\n\nPerfect for practicing guitar, bass, keyboard over a blues progression.\nDuration: 32 seconds | Difficulty: Beginner\n\n\ud83d\udccb Chord Progression:\nG7 - C7 - D7\n(I7 - IV7 - V7)\n\n\ud83c\udfb5 Scales to try:\n\u2022 G Blues Scale\n\u2022 G Mixolydian\n\u2022 G Major Pentatonic\n\n\u2705 Great for:\n\u2022 Guitar & bass improvisation\n\u2022 Scale and mode practice\n\u2022 Jam sessions & recording demos\n\u2022 Developing your ear and timing\n\n#backingtrack #jamtrack #g #blues #guitar #practice #improvisation",
+  "tags": [
+    "backing track",
+    "jam track",
+    "practice track",
+    "G",
+    "G backing track",
+    "backing track in G",
+    "key of G",
+    "G jam track",
+    "G major backing track",
+    "90 bpm",
+    "90 bpm backing track",
+    "medium tempo backing track",
+    "blues",
+    "blues backing track",
+    "blues jam track",
+    "G blues backing track",
+    "blues in G",
+    "12 bar blues",
+    "blues jam",
+    "blues guitar",
+    "blues licks",
+    "short backing track",
+    "guitar backing track",
+    "guitar practice",
+    "bass backing track",
+    "keyboard backing track",
+    "G7 C7 D7",
+    "G7-C7-D7"
+  ],
+  "categoryId": "10",
+  "privacyStatus": "public",
+  "madeForKids": false,
+  "defaultLanguage": "en",
+  "defaultAudioLanguage": "en",
+  "license": "youtube",
+  "_track": {
+    "key": "G",
+    "genre": "blues",
+    "tempo_bpm": 90,
+    "duration_seconds": 32.0,
+    "chord_progression": [
+      "G7",
+      "C7",
+      "D7"
+    ]
+  },
+  "_thumbnail": "thumbnail.png"
+}

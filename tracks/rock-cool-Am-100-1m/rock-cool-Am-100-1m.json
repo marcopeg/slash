@@ -1,0 +1,156 @@
+{
+  "meta": {
+    "name": "rock-cool-Am-100-1m",
+    "tempo_bpm": 100,
+    "time_signature": "4/4",
+    "key": "Am",
+    "mode": "minor",
+    "total_bars": 24,
+    "total_duration_seconds": 57.6,
+    "style": "melodic rock (i-VII-VI-VII)",
+    "description": "Melodic rock backing track in A minor with clean guitar melody over power chords",
+    "genre": "rock",
+    "subgenre": "melodic rock",
+    "chord_progression": [
+      "Am",
+      "G",
+      "F"
+    ],
+    "progression_roman": [
+      "i",
+      "VII",
+      "VI",
+      "VII"
+    ],
+    "suggested_scales": [
+      "A Minor Pentatonic",
+      "A Natural Minor",
+      "A Dorian"
+    ],
+    "target_instruments": [
+      "guitar",
+      "bass",
+      "keyboard"
+    ],
+    "difficulty": "beginner",
+    "youtube": {
+      "title_override": null,
+      "description_extra": "Features a melodic guitar line over the classic Am-G-F progression. Great for practicing minor pentatonic licks!",
+      "tags_extra": [
+        "melodic rock",
+        "Am G F",
+        "minor key backing track"
+      ]
+    }
+  },
+  "events": [
+    {
+      "chord": "Am",
+      "bar": 1,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 0.0,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "G",
+      "bar": 3,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 4.8,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "F",
+      "bar": 5,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 9.6,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "G",
+      "bar": 7,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 14.4,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "Am",
+      "bar": 9,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 19.2,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "G",
+      "bar": 11,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 24.0,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "F",
+      "bar": 13,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 28.8,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "G",
+      "bar": 15,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 33.6,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "Am",
+      "bar": 17,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 38.4,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "G",
+      "bar": 19,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 43.2,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "F",
+      "bar": 21,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 48.0,
+      "duration_seconds": 4.8
+    },
+    {
+      "chord": "G",
+      "bar": 23,
+      "beat": 1,
+      "duration_bars": 2,
+      "duration_beats": 8,
+      "start_seconds": 52.8,
+      "duration_seconds": 4.8
+    }
+  ]
+}

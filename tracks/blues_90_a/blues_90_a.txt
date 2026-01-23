@@ -1,0 +1,17 @@
+# A Blues - 90 BPM - 12 bars (1 chorus)
+# Key: A major | Style: 12-bar blues
+# Duration: 0:32
+
+## 12-Bar Form
+
+Bar 1-4:    A7    (4 bars)
+Bar 5-6:    D7    (2 bars)
+Bar 7-8:    A7    (2 bars)
+Bar 9:      E7
+Bar 10:     D7
+Bar 11:     A7
+Bar 12:     E7    (turnaround)
+
+## Structure
+
+Chorus 1:   Bars 1-12

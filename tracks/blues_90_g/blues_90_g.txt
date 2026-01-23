@@ -1,0 +1,17 @@
+# G Blues - 90 BPM - 12 bars (1 chorus)
+# Key: G major | Style: 12-bar blues
+# Duration: 0:32
+
+## 12-Bar Form
+
+Bar 1-4:    G7    (4 bars)
+Bar 5-6:    C7    (2 bars)
+Bar 7-8:    G7    (2 bars)
+Bar 9:      D7
+Bar 10:     C7
+Bar 11:     G7
+Bar 12:     D7    (turnaround)
+
+## Structure
+
+Chorus 1:   Bars 1-12

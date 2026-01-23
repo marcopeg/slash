@@ -1,0 +1,42 @@
+# Little Wing Style - 68 BPM - 40 bars (5 cycles)
+# Key: E minor | Style: Psychedelic ballad
+# Duration: 2:21
+
+## 8-Bar Progression
+
+| Bar | Chord   | Notes                    |
+|-----|---------|--------------------------|
+| 1   | Em      | Home chord               |
+| 2   | G       | Relative major           |
+| 3   | Am      | Subdominant              |
+| 4   | Em      | Return home              |
+| 5   | Bm      | Minor dominant           |
+| 6   | Am-Bb   | Chromatic climb          |
+| 7   | C       | VI chord                 |
+| 8   | D       | VII - sets up return     |
+
+## Arrangement
+
+- **Guitar**: Clean arpeggiated chords with rhythmic hits
+- **Organ**: Sustained pad voicings underneath
+- **Bass**: Melodic walking lines with chromatic approach notes
+- **Drums**: Soft shuffle with alternating sparse/full patterns
+
+## Structure
+
+Cycle 1:  Bars 1-8
+Cycle 2:  Bars 9-16
+Cycle 3:  Bars 17-24
+Cycle 4:  Bars 25-32
+Cycle 5:  Bars 33-40
+
+## Suggested Scales
+
+- E Minor Pentatonic (E-G-A-B-D)
+- E Natural Minor (E-F#-G-A-B-C-D)
+- E Dorian (E-F#-G-A-B-C#-D) - works great over the Am-Bb change
+
+## Feel
+
+Dreamy, floating, expressive - leave space between phrases.
+Think Hendrix: bend into notes, use double stops, add chord tones.
