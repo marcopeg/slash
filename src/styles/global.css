@@ -70,9 +70,13 @@ ul {
 }
 
 .track-thumbnail {
+  display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0f1117;
   border-radius: 6px;
 }
 

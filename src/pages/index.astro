@@ -12,11 +12,11 @@ const tracks = getTrackSummaries();
       <li class="track-item">
         <a class="track-link" href={`/track/${track.slug}`}>
           {track.thumbnail && (
-            <img
+            <span
               class="track-thumbnail"
-              src={track.thumbnail}
-              alt={`Thumbnail for ${track.title}`}
-              loading="lazy"
+              role="img"
+              aria-label={`Thumbnail for ${track.title}`}
+              style={`background-image: url(${track.thumbnail});`}
             />
           )}
           <span class="track-title">{track.title}</span>
