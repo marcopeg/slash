@@ -7,27 +7,20 @@ const tracks = getTrackSummaries();
 ---
 
 <Layout>
-  <h2>🎵 Find Your Track And Play</h2>
-  <ul class="track-list">
+  <ul class="track-grid">
     {tracks.map(track => (
-      <li class="track-card">
-        {track.thumbnail && (
-          <img
-            class="track-thumbnail"
-            src={track.thumbnail}
-            alt={`Thumbnail for ${track.title}`}
-            loading="lazy"
-          />
-        )}
-        <div class="track-details">
-          <a href={`/track/${track.slug}`}>{track.title}</a>
-          <p class="track-description">{track.description}</p>
-          <ul class="track-tags">
-            {track.tags.map(tag => (
-              <li class="track-tag">{tag}</li>
-            ))}
-          </ul>
-        </div>
+      <li class="track-item">
+        <a class="track-link" href={`/track/${track.slug}`}>
+          {track.thumbnail && (
+            <img
+              class="track-thumbnail"
+              src={track.thumbnail}
+              alt={`Thumbnail for ${track.title}`}
+              loading="lazy"
+            />
+          )}
+          <span class="track-title">{track.title}</span>
+        </a>
       </li>
     ))}
   </ul>

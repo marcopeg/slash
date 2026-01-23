@@ -9,6 +9,8 @@ type TrackMeta = {
   key?: string;
   mode?: string;
   style?: string;
+  total_bars?: number;
+  total_duration_seconds?: number;
   description?: string;
   genre?: string;
   subgenre?: string;
@@ -43,6 +45,17 @@ type TrackData = {
 
 const tracksDir = fileURLToPath(new URL('../../tracks', import.meta.url));
 
+const formatDuration = (seconds?: number) => {
+  if (!seconds || Number.isNaN(seconds)) {
+    return null;
+  }
+
+  const rounded = Math.round(seconds);
+  const minutes = Math.floor(rounded / 60);
+  const remainingSeconds = rounded % 60;
+  return `${minutes}:${remainingSeconds.toString().padStart(2, '0')}`;
+};
+
 const toTitle = (meta: TrackMeta) => {
   const titleParts: string[] = [];
 
@@ -52,14 +65,19 @@ const toTitle = (meta: TrackMeta) => {
 
   if (meta.key) {
     const modePart = meta.mode ? ` ${meta.mode}` : '';
-    titleParts.push(`in ${meta.key}${modePart}`);
+    titleParts.push(`${meta.key}${modePart}`);
   }
 
   if (meta.tempo_bpm) {
-    titleParts.push(`(${meta.tempo_bpm} bpm)`);
+    titleParts.push(`${meta.tempo_bpm} bpm`);
   }
 
-  return titleParts.join(' ').trim();
+  const duration = formatDuration(meta.total_duration_seconds);
+  if (duration) {
+    titleParts.push(duration);
+  }
+
+  return titleParts.join(' • ').trim();
 };
 
 const toTags = (meta: TrackMeta) => {
