@@ -1,13 +1,17 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getTrackBySlug, getTrackSlugs } from '../../lib/tracks';
+import { getTrackBySlug, getPlayableTrackSlugs } from '../../lib/tracks';
 
 export async function getStaticPaths() {
-  return getTrackSlugs().map(slug => ({ params: { slug } }));
+  return getPlayableTrackSlugs().map(slug => ({ params: { slug } }));
 }
 
 const { slug } = Astro.params;
 const track = getTrackBySlug(slug);
+
+if (!track) {
+  Astro.response.status = 404;
+}
 ---
 
 <Layout>
@@ -31,7 +35,15 @@ const track = getTrackBySlug(slug);
         </ul>
       )}
       <p>Track slug: {slug}</p>
-      <p>[Audio player coming soon]</p>
+      {track.hasVideo ? (
+        <video controls src={track.video} class="track-player">
+          Your browser does not support the video tag.
+        </video>
+      ) : track.hasAudio ? (
+        <audio controls src={track.audio} class="track-player">
+          Your browser does not support the audio element.
+        </audio>
+      ) : null}
       <a href="/">← Back to tracks</a>
     </div>
   )}

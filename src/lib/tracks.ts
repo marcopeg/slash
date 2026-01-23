@@ -22,6 +22,10 @@ type TrackSummary = {
   description: string;
   tags: string[];
   thumbnail: string | null;
+  hasVideo?: boolean;
+  hasAudio?: boolean;
+  video?: string | null;
+  audio?: string | null;
 };
 
 type TrackData = {
@@ -31,6 +35,10 @@ type TrackData = {
   title: string;
   tags: string[];
   thumbnail: string | null;
+  hasVideo?: boolean;
+  hasAudio?: boolean;
+  video?: string | null;
+  audio?: string | null;
 };
 
 const tracksDir = fileURLToPath(new URL('../../tracks', import.meta.url));
@@ -80,6 +88,19 @@ const getThumbnail = (slug: string) => {
   return `data:image/png;base64,${base64}`;
 };
 
+const getTrackMedia = (slug: string) => {
+  const videoPath = path.join(tracksDir, slug, `${slug}.mp4`);
+  const audioPath = path.join(tracksDir, slug, `${slug}.mp3`);
+
+  const hasVideo = fs.existsSync(videoPath);
+  const hasAudio = fs.existsSync(audioPath);
+
+  const publicVideo = hasVideo ? `/tracks/${slug}/${slug}.mp4` : null;
+  const publicAudio = hasAudio ? `/tracks/${slug}/${slug}.mp3` : null;
+
+  return { hasVideo, hasAudio, video: publicVideo, audio: publicAudio };
+};
+
 const loadTrackMeta = (slug: string) => {
   const jsonPath = path.join(tracksDir, slug, `${slug}.json`);
 
@@ -107,22 +128,41 @@ export const getTrackSummaries = (): TrackSummary[] =>
         return null;
       }
 
+      const media = getTrackMedia(slug);
+
+      if (!media.hasVideo && !media.hasAudio) {
+        return null;
+      }
+
       return {
         slug,
         title: toTitle(meta) || slug,
         description: meta.description ?? 'No description available yet.',
         tags: toTags(meta),
         thumbnail: getThumbnail(slug),
+        hasVideo: media.hasVideo,
+        hasAudio: media.hasAudio,
+        video: media.video,
+        audio: media.audio,
       } satisfies TrackSummary;
     })
     .filter((track): track is TrackSummary => track !== null);
 
 export const getTrackSlugs = () => listTrackSlugs();
 
+export const getPlayableTrackSlugs = () =>
+  getTrackSummaries().map(t => t.slug);
+
 export const getTrackBySlug = (slug: string): TrackData | null => {
   const meta = loadTrackMeta(slug);
 
   if (!meta) {
+    return null;
+  }
+
+  const media = getTrackMedia(slug);
+
+  if (!media.hasVideo && !media.hasAudio) {
     return null;
   }
 
@@ -133,5 +173,9 @@ export const getTrackBySlug = (slug: string): TrackData | null => {
     description: meta.description ?? 'No description available yet.',
     tags: toTags(meta),
     thumbnail: getThumbnail(slug),
+    hasVideo: media.hasVideo,
+    hasAudio: media.hasAudio,
+    video: media.video,
+    audio: media.audio,
   } satisfies TrackData;
 };
