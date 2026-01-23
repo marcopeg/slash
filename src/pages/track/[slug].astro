@@ -1,27 +1,35 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { getTrackBySlug, getTrackSlugs } from '../../lib/tracks';
 
 export async function getStaticPaths() {
-  return [
-    { params: { slug: 'blues_100_g' } },
-    { params: { slug: 'rock-cool-Am-100-1m' } },
-    { params: { slug: 'little_wing_68_em' } },
-  ];
+  return getTrackSlugs().map(slug => ({ params: { slug } }));
 }
 
 const { slug } = Astro.params;
-const tracks: Record<string, { title: string; audio: null }> = {
-  'blues_100_g': { title: 'Blues in G (100bpm)', audio: null },
-  'rock-cool-Am-100-1m': { title: 'Rock Cool in Am (100bpm, 1m)', audio: null },
-  'little_wing_68_em': { title: 'Little Wing in Em (68bpm)', audio: null },
-};
-const track = tracks[slug];
+const track = getTrackBySlug(slug);
 ---
 
 <Layout>
   {track && (
     <div>
       <h2>{track.title}</h2>
+      {track.thumbnail && (
+        <img
+          class="track-thumbnail"
+          src={track.thumbnail}
+          alt={`Thumbnail for ${track.title}`}
+          loading="lazy"
+        />
+      )}
+      <p>{track.description}</p>
+      {track.tags.length > 0 && (
+        <ul class="track-tags">
+          {track.tags.map(tag => (
+            <li class="track-tag">{tag}</li>
+          ))}
+        </ul>
+      )}
       <p>Track slug: {slug}</p>
       <p>[Audio player coming soon]</p>
       <a href="/">← Back to tracks</a>
