@@ -22,11 +22,12 @@ if (!track) {
           <video controls src={track.video} class="track-player">
             Your browser does not support the video tag.
           </video>
-        ) : track.hasAudio ? (
-          <audio controls src={track.audio} class="track-player">
-            Your browser does not support the audio element.
-          </audio>
-        ) : null}
+        ) : (
+          // show thumbnail area for audio-only or no-media (defensive)
+          track.thumbnail ? (
+            <img class="track-player" src={track.thumbnail} alt={`Thumbnail for ${track.title}`} />
+          ) : null
+        )}
       </div>
 
       <div class="track-info">
@@ -38,6 +39,11 @@ if (!track) {
             alt={`Thumbnail for ${track.title}`}
             loading="lazy"
           />
+        )}
+        {(!track.hasVideo && track.hasAudio) && (
+          <audio controls src={track.audio} class="track-player audio-player">
+            Your browser does not support the audio element.
+          </audio>
         )}
         <p>{track.description}</p>
         {track.tags.length > 0 && (
