@@ -150,6 +150,33 @@ ul {
   background: #000;
 }
 
+.track-details {
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.track-details summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.9rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.track-details summary::-webkit-details-marker {
+  display: none;
+}
+
+.track-details summary span {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 .audio-player {
   height: 56px;
   background: linear-gradient(#111, #000);
@@ -160,6 +187,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  padding: 1.2rem;
 }
 
 @media (max-width: 900px) {
@@ -172,8 +200,23 @@ ul {
   .track-detail-grid {
     grid-template-columns: 1fr;
   }
+  .track-media {
+    order: -1;
+  }
   .track-player {
     max-height: 60vh;
     object-fit: contain;
+  }
+  .track-details {
+    border-radius: 16px;
+  }
+  .track-details summary {
+    padding: 1rem 1.1rem;
+  }
+  .track-info {
+    padding: 1rem 1.1rem 1.2rem;
+  }
+  .audio-player {
+    height: 64px;
   }
 }
