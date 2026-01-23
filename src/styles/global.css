@@ -147,3 +147,45 @@ h2 {
     justify-content: flex-start;
   }
 }
+
+/* Track page two-column layout: media left, info right */
+.track-grid {
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.track-media {
+  width: 100%;
+}
+
+.track-player {
+  width: 100%;
+  height: auto;
+  border-radius: calc(var(--radius) - 4px);
+  border: 1px solid var(--border);
+  background: #000;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .track-grid {
+    grid-template-columns: 300px 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .track-grid {
+    grid-template-columns: 1fr;
+  }
+  .track-player {
+    max-height: 60vh;
+    object-fit: contain;
+  }
+}

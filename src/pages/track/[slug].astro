@@ -16,35 +16,40 @@ if (!track) {
 
 <Layout>
   {track && (
-    <div>
-      <h2>{track.title}</h2>
-      {track.thumbnail && (
-        <img
-          class="track-thumbnail"
-          src={track.thumbnail}
-          alt={`Thumbnail for ${track.title}`}
-          loading="lazy"
-        />
-      )}
-      <p>{track.description}</p>
-      {track.tags.length > 0 && (
-        <ul class="track-tags">
-          {track.tags.map(tag => (
-            <li class="track-tag">{tag}</li>
-          ))}
-        </ul>
-      )}
-      <p>Track slug: {slug}</p>
-      {track.hasVideo ? (
-        <video controls src={track.video} class="track-player">
-          Your browser does not support the video tag.
-        </video>
-      ) : track.hasAudio ? (
-        <audio controls src={track.audio} class="track-player">
-          Your browser does not support the audio element.
-        </audio>
-      ) : null}
-      <a href="/">← Back to tracks</a>
+    <div class="track-grid">
+      <div class="track-media">
+        {track.hasVideo ? (
+          <video controls src={track.video} class="track-player">
+            Your browser does not support the video tag.
+          </video>
+        ) : track.hasAudio ? (
+          <audio controls src={track.audio} class="track-player">
+            Your browser does not support the audio element.
+          </audio>
+        ) : null}
+      </div>
+
+      <div class="track-info">
+        <h2>{track.title}</h2>
+        {track.thumbnail && (
+          <img
+            class="track-thumbnail"
+            src={track.thumbnail}
+            alt={`Thumbnail for ${track.title}`}
+            loading="lazy"
+          />
+        )}
+        <p>{track.description}</p>
+        {track.tags.length > 0 && (
+          <ul class="track-tags">
+            {track.tags.map(tag => (
+              <li class="track-tag">{tag}</li>
+            ))}
+          </ul>
+        )}
+        <p>Track slug: {slug}</p>
+        <a href="/">← Back to tracks</a>
+      </div>
     </div>
   )}
   {!track && (
