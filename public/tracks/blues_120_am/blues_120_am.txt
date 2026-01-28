@@ -1,0 +1,22 @@
+# A Minor Blues (BB King style) - 120 BPM - 144 bars (12 choruses)
+# Key: Am | Style: 12-bar minor blues shuffle (BB King vibe)
+# Duration: 4:48
+
+## 12-Bar Form
+
+Bar 1-4:    Am7   (4 bars)
+Bar 5-6:    Dm7   (2 bars)
+Bar 7-8:    Am7   (2 bars)
+Bar 9:      E7
+Bar 10:     Dm7
+Bar 11:     Am7
+Bar 12:     E7    (turnaround)
+
+## Structure
+
+Choruses: 1-12 (Bars 1-144)
+
+## Notes
+- Groove: shuffle (triplet hi-hat) with laid-back comping to leave space for expressive BB King-style phrasing.
+- Harmony: half-note comp hits (hits on beats 1 and 3) to give space for single-note solos.
+- Suggested scales: A minor pentatonic, A blues scale, A Dorian.
